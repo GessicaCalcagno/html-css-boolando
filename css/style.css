@@ -3,11 +3,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
-  }
-  body{
+}
+
+body {
     background-color: aqua;
-  }
+}
+
+/* CARDS */
+/* COMMON */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+    border: 1px solid black;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.discount,
+.label{
+    position: absolute;
+    bottom: 40px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+}
+.discount {   
+     /* left: 50%; */
+    background-color: red;
+    left: 0;
+    padding: 5px;
+}
+
+.label {
+    background-color: green;
+    left: 40px;
+    padding: 5px;
+}
+
+.heart {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 3px 6px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.price-cut{
+    text-decoration: line-through;
+}
+
+.lbl-green{
+    left: 0;
+    padding: 5px;
+}
