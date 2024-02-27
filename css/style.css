@@ -20,28 +20,22 @@ header {
     z-index: 9999;
 }
 
-main {
-    position: relative;
-    top: 60px;
-}
-
 ul>li {
     list-style-type: none;
     display: inline;
 }
 
 a {
+    /* color:inherit QUESTO LO POSSO METTERE NEL RESET */
     text-decoration: none;
     margin-right: 10px;
 }
-
 
 .logo-hed {
     height: 30px;
 }
 
-.menu-hed {
-    width: 80%;
+.menu-hed-80 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -61,11 +55,20 @@ a {
     /* border: 1px solid black; */
 }
 
+main {
+    position: relative;
+    top: 60px;
+}
+/* UTILITIES */
 .flex {
     display: flex;
+}
+
+.wrap{
     flex-wrap: wrap;
 }
 
+/* GRIGLIA */
 .col {
     width: calc(100% / 3);
     padding: 10px;
@@ -75,6 +78,7 @@ a {
     position: relative;
 }
 
+/* COMMON */
 .discount,
 .label {
     position: absolute;
@@ -97,16 +101,13 @@ a {
 }
 
 .heart {
-    /* display: none; */
     position: absolute;
     top: 0;
     right: 0;
     background-color: white;
     padding: 3px 6px;
-}
-
-.heart:hover {
-    color: red;
+    /* IL CURSORE DIVENTA MANINA */
+    cursor: pointer;
 }
 
 h4 {
@@ -128,16 +129,20 @@ h4 {
 }
 
 /* HOVER */
-.card:hover .img1a {
-    display: none;
+.heart:hover {
+    color: red;
 }
 
-.h-img1b {
+.card:hover .img1a {
     display: none;
 }
 
 .card:hover .h-img1b {
     display: block;
+}
+
+.h-img1b {
+    display: none;
 }
 
 /* FINE CARDS */
@@ -148,19 +153,14 @@ footer {
     background-color: black;
 }
 
-.container-80 {
-    width: 80%;
-    padding: 10px;
-    /* background-color: aqua; */
-    margin: auto;
-}
-
 .t-icone {
     margin-bottom: 5px;
 }
 
-.container-80 {
+.containerf-80 {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    /* background-color: aqua; */
 }
 /* FINE FOOTER */
